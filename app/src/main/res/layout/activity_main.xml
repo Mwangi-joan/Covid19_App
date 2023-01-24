@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:src="@drawable/jha"
+        android:id="@+id/logo"
+        android:padding="10px"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:src="@drawable/first"
+        android:id="@+id/covid"
+        android:layout_below="@+id/logo"
+        android:padding="20px"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/introduction"
+        android:layout_below="@+id/covid"
+        android:padding="10px"
+        android:text="Jipende App is here to keep all of us safe."
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30px"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/introduction2"
+        android:layout_below="@+id/introduction"
+        android:padding="25px"
+        android:text="Help us beat COVID-19 by sharing information to keep you and all of us safe and free from the virus."
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30px"
+
+        />
+
+    <Button
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:id="@+id/button1"
+        android:layout_below="@id/introduction2"
+        android:background="@color/light_blue"
+        android:layout_centerInParent="true"
+        android:hint="CONTINUE"
+        android:clickable="true"
+        android:onClick="CONTINUE"
+        android:textColor="@color/black"/>
+
+
+
+
+</RelativeLayout>

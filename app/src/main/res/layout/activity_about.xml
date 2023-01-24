@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT US"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:background="@color/light_blue"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This app provides:"
+            android:layout_marginBottom="20px"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Locations for the nearest COVID 19 centres."
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A checklist for COVID 19 symptoms"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timely advice such as COVID 19 hotspots and testing centres."
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth technology to notify you when you get close to a COVID 19 positive Jipende user in real time."
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enables you to enter COVID 19 test results so that in case of a positive case, other Jipende App users can get notified when they come into close proximity with you."
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="FEEDBACK"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For any queries or nibbling questions, contact us at:"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JipendeFAQ@gmail.com"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+        <Button
+            android:id="@+id/button_about"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:text="BACK"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:onClick="BACK"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

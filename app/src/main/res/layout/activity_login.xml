@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:src="@drawable/jha"
+        android:id="@+id/jipende"
+        android:padding="20px"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/email"
+        android:layout_below="@+id/jipende"
+        android:background="@color/light_blue"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:hint="Enter your Email Address"
+        android:layout_marginTop="30px"
+        android:textColor="@color/black"
+        android:padding="15px"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/email"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:layout_marginTop="40px"
+        android:padding="15px"
+        android:background="@color/light_blue"
+        android:hint="Enter your Password"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/password"
+        />
+
+    <Button
+        android:layout_width="700px"
+        android:layout_height="100px"
+        android:hint="LOGIN"
+        android:clickable="true"
+        android:onClick="LOGIN"
+        android:id="@+id/login"
+        android:layout_below="@+id/password"
+        android:background="@color/light_blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="60px"
+        android:padding="15px"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not a user? Register!"
+        android:clickable="true"
+        android:onClick="REGISTER"
+        android:id="@+id/user2"
+        android:textSize="35px"
+        android:layout_below="@+id/login"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center"
+        android:layout_marginTop="10px"/>
+
+
+
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="100px"
+        android:layout_below="@+id/user2"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/jipende"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

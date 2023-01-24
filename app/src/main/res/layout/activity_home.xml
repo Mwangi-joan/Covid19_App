@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:src="@drawable/jha"
+        android:id="@+id/logo2"
+        />
+
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="300px"
+        android:id="@+id/privacy"
+        android:src="@drawable/concern"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/logo2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataprivacy"
+        android:layout_below="@id/privacy"
+        android:textColor="@color/black"
+        android:text="Data Privacy"
+        android:textAlignment="center"
+        android:textSize="40px"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@id/dataprivacy"
+        android:text="We value your privacy as much as you do."
+        android:textSize="30px"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"
+        android:paddingBottom="5px"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description2"
+        android:layout_below="@id/description"
+        android:text="This app does not track your location without your consent."
+        android:textSize="30px"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"
+        android:paddingBottom="5px"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description3"
+        android:layout_below="@id/description2"
+        android:text="Bluetooth is used to estimate how long you have had close contact with somebody."
+        android:textSize="30px"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"
+        android:paddingBottom="5px"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description4"
+        android:layout_below="@id/description3"
+        android:text="You can clear your data in your settings in real time."
+        android:textSize="30px"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"
+        android:paddingBottom="20px"/>
+    <Button
+        android:layout_width="600px"
+        android:layout_height="95px"
+        android:id="@+id/button2"
+        android:hint="I AGREE"
+        android:clickable="true"
+        android:layout_below="@id/description4"
+        android:background="@color/light_blue"
+        android:onClick="AGREE"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="600px"
+        android:layout_height="95px"
+        android:layout_below="@id/button2"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="31dp"
+        android:background="@color/light_blue"
+        android:clickable="true"
+        android:hint="NO THANKS"
+        android:textColor="@color/black"
+        android:onClick="DISAGREE"
+        android:padding="10dp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

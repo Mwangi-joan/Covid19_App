@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PositiveActivity">
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="200px"
+        android:id="@+id/jipende2"
+        android:src="@drawable/calendar"
+        android:layout_centerHorizontal="true"
+        android:padding="10px"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jipende2"
+        android:text="YOU NEED TO ISOLATE FOR 14 DAYS!"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Linear1"
+        android:layout_below="@+id/jipende2"
+        android:padding="20px"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:id="@+id/calendar"
+            android:src="@drawable/cal"/>
+        <Button
+            android:layout_width="800px"
+            android:layout_height="80px"
+            android:background="@color/light_blue"
+            android:hint="Check Symptoms"
+            android:backgroundTint="@color/white"
+            android:textAlignment="viewStart"
+            android:clickable="true"
+            android:onClick="SYMPTOMS"
+            android:id="@+id/button_symptoms"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Linear2"
+        android:layout_below="@+id/Linear1"
+        android:padding="20px"
+        >
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:id="@+id/hospital"
+            android:src="@drawable/hospital"/>
+        <Button
+            android:layout_width="800px"
+            android:layout_height="80px"
+            android:background="@color/light_blue"
+            android:hint="Nearby Hospitals"
+            android:textColor="@color/white"
+            android:textAlignment="viewStart"
+            android:clickable="true"
+            android:onClick="HOSPITALS"
+            android:id="@+id/button_hospital"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Linear3"
+        android:layout_below="@+id/Linear2"
+        android:padding="20px"
+        >
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:id="@+id/results"
+            android:src="@drawable/results"/>
+        <Button
+            android:layout_width="800px"
+            android:layout_height="80px"
+            android:background="@color/light_blue"
+            android:hint="Enter Test Results"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:onClick="RESULTS"
+            android:textAlignment="viewStart"
+            android:id="@+id/button_results"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Linear4"
+        android:layout_below="@+id/Linear3"
+        android:padding="20px"
+        >
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="100px"
+            android:id="@+id/about"
+            android:src="@drawable/about"/>
+        <Button
+            android:layout_width="800px"
+            android:layout_height="80px"
+            android:background="@color/light_blue"
+            android:hint="About the App"
+            android:textColor="@color/white"
+            android:textAlignment="viewStart"
+            android:clickable="true"
+            android:onClick="ABOUT"
+            android:id="@+id/button_about"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:id="@+id/logo3"
+        android:layout_below="@+id/Linear4"
+        android:src="@drawable/jipende"
+        android:padding="15px"/>
+
+
+</RelativeLayout>

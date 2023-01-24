@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymptomsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check your Symptoms"
+        android:background="@color/light_blue"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:id="@+id/temp"
+            android:text="High Temperature &#xA; This means you have been experiencing high fever when you hold your arm against your forehead or any other part of the body.  "
+        />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:id="@+id/cough"
+            android:layout_height="130dp"
+            android:text="Continuous dry coughs &#xA; This means you have been experiencing a persistent cough for a long duration of time; an unusual cough for a day or even a couple of days.   "
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:id="@+id/smell"
+            android:text="Change in sense of taste an smell &#xA; This means you have been experiencing a loss in the sense of taste and smell. Food may seem tasteless and smells have no odour to you."
+            />
+
+        <Button
+            android:id="@+id/button_positive"
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:text="I have the symptoms"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:onClick="POSITIVE"/>
+        <Button
+            android:id="@+id/button_negative"
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="I don't have these symptoms"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:onClick="NEGATIVE"/>
+    </LinearLayout>
+
+</RelativeLayout>

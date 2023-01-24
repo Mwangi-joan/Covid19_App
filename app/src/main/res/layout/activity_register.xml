@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:src="@drawable/jha"
+        android:id="@+id/jipende2"
+        android:padding="20px"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/name_register"
+        android:layout_below="@+id/jipende2"
+        android:background="@color/light_blue"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:hint="Enter your Name"
+        android:layout_marginTop="30px"
+        android:textColor="@color/black"
+        android:padding="15px"
+        android:inputType="text"
+        android:drawableLeft="@drawable/person"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/email_register"
+        android:layout_below="@+id/name_register"
+        android:background="@color/light_blue"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:hint="Enter your Email Address"
+        android:layout_marginTop="30px"
+        android:textColor="@color/black"
+        android:padding="15px"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/person"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/phone_number"
+        android:layout_below="@+id/email_register"
+        android:background="@color/light_blue"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:hint="Enter your Phone Number"
+        android:layout_marginTop="30px"
+        android:textColor="@color/black"
+        android:padding="15px"
+        android:inputType="number"
+        android:drawableLeft="@drawable/phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/password_register"
+        android:inputType="textPassword"
+        android:layout_below="@+id/phone_number"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:layout_marginTop="40px"
+        android:padding="15px"
+        android:background="@color/light_blue"
+        android:hint="Enter your Password"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/password"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/password_confirm"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password_register"
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:layout_marginTop="40px"
+        android:padding="15px"
+        android:background="@color/light_blue"
+        android:hint="Confirm your Password"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/password"
+        />
+
+    <Button
+        android:layout_width="700px"
+        android:layout_height="100px"
+        android:hint="LOGIN"
+        android:clickable="true"
+        android:id="@+id/register"
+        android:layout_below="@+id/password_confirm"
+        android:background="@color/light_blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="60px"
+        android:padding="15px"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already a user? Log In!"
+        android:clickable="true"
+        android:onClick="USER"
+        android:id="@+id/user"
+        android:textSize="35px"
+        android:layout_below="@+id/register"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center"
+        android:layout_marginTop="10px"/>
+
+
+
+</RelativeLayout>
